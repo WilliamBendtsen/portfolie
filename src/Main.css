@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "hero hero hero image-of-me image-of-me"
+    ". . tech-stack tech-stack tech-stack"
+    ". . project-title . ."
+    ". four-amigos-text four-amigos-text four-amigos-picture four-amigos-picture"
+    ". steno-picture steno-picture steno-text steno-text"
+    ". troejborg-text troejborg-text troejborg-picture troejborg-picture"
+    ". nippon-picture nippon-picture nippon-text nippon-text"
+    "skills skills skills skills skills"
+    "experience experience experience experience experience"
+    "contact contact contact contact contact";
+  background-color: #0b1528;
+  color: #cccccc;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  grid-area: hero;
+  height: 30vh;
+  text-align: center;
+  gap: 2rem;
+}
+
+#hero h1 {
+  line-height: 1.5;
+}
+
+#hero ul {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+#hero li a{
+  font-size: 4rem;
+}
+
+#hero-arrow {
+  color: #d0d5df;
+  font-size: 2rem;
+  font-weight: lighter;
+  animation: bounce 2s infinite;
+  margin
+}
+
+/* 
+
+
+
+GØR DET HER MED REACT I STEDET FOR
+
+
+
+
+*/
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  40% {
+    transform: translateY(-5px); /* Bounce up */
+  }
+  60% {
+    transform: translateY(-5px); /* Bounce down slightly */
+  }
+}
+
+#image-of-me {
+  grid-area: image-of-me;
+  justify-self: start;
+  height: 20rem;
+  align-self: center;
+  margin-left: 5rem;
+}
+
+#tech-stack {
+  grid-area: tech-stack;
+  height: 50vh;
+  text-align: center;
+  justify-self: center;
+}
+
+#tech-stack ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tech-stack ul li {
+  margin: 0 0.5rem;
+  font-size: 2.5rem;
+}
+
+#tech-stack ul li img {
+  height: 3rem;
+}
+
+#projects-title{
+  grid-area: project-title;
+  justify-self: center;
+  font-size: 5rem;
+}
+
+#four-amigos-text {
+  display: flex;
+  flex-direction: column;
+  grid-area: four-amigos-text;
+  align-self: center;
+  justify-self: start;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+  width: fit-content;
+  gap: 1rem;
+}
+
+.programs-used{
+  display: flex;
+  gap: 2rem;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.programs-used li{
+  font-size: 2.5rem;
+}
+
+.html-icon{
+  color: #e44d27;
+}
+
+.css-icon{
+  color: #264de3;
+}
+
+.js-icon{
+  color: #f7e017;
+}
+
+.react-icon{
+  color: #0a7ea3;
+}
+
+.linkedin-icon{
+color: #0b63c4;
+}
+
+.github-icon{
+color: #d0d5df;
+}
+
+.github-and-website{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.github-and-website a{
+  color: #d0d5df;
+}
+
+#four-amigos-text p{
+  max-width: 25rem;
+}
+
+#four-amigos-picture{
+  grid-area: four-amigos-picture;
+  height: 15rem;
+  justify-self: start;
+  align-self: center;
+}
+
+#steno-picture{
+  grid-area: steno-picture;
+  height: 15rem;
+  justify-self: start;
+  align-self: center;
+}
+
+#steno-text {
+  display: flex;
+  flex-direction: column;
+  grid-area: steno-text;
+  align-self: center;
+  justify-self: start;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+  width: fit-content;
+  gap: 1rem;
+}
+
+#steno-text p{
+  max-width: 25rem;
+}
+
+#troejborg-text {
+  grid-area: troejborg-text;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: start;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+  width: fit-content;
+  gap: 1rem;
+}
+
+#troejborg-text p{
+  max-width: 25rem;
+}
+
+#troejborg-picture{
+  grid-area: troejborg-picture;
+  height: 15rem;
+  justify-self: start;
+  align-self: center;
+}
+
+#nippon-picture{
+  grid-area: nippon-picture;
+  height: 15rem;
+  justify-self: start;
+  align-self: center;
+}
+
+#nippon-text {
+  grid-area: nippon-text;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: start;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+  width: fit-content;
+  gap: 1rem;
+}
+
+#nippon-text p{
+  max-width: 33rem;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: skills;
+  height: 50vh;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: experience;
+  height: 50vh;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: contact;
+  height: 50vh;
+  gap: 2rem;
+  text-align: center;
+}
+
+#contact p{
+  max-width: 50%;
+}
+
+#contact-button {
+  padding-top: 3rem;
+  background-color: #283958;
+  border-radius: 28px;
+  border: 1px solid #283958;
+  cursor: pointer;
+  color: #dbe0e9;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283958;
+  width: 15%;
+}
+
+#contact-button:hover {
+  background-color: #2e4875;
+}
+
+#contact-button:active {
+  background-color: #283958;
+}
