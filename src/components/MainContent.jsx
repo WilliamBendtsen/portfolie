@@ -1,7 +1,7 @@
 import HeroSection from "./HeroSection";
 import Skills from "./Skills";
 import Projects from "./Projects";
-import Experience from "./Experience";
+import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 
 export default function Main() {
@@ -10,7 +10,7 @@ export default function Main() {
       <HeroSection />
       <Skills />
       <Projects />
-      <Experience />
+      <AboutMe />
       <Contact />
     </main>
   );

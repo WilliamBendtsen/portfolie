@@ -17,43 +17,171 @@ body {
   font-family: Nunito;
 }
 
-#nav {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.language-switcher {
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  left: 1rem;
+  top: 1rem;
+  gap: 1rem;
   align-items: center;
-  background-color: #152237;
-  color: #d0d5df;
+}
+
+.language-switcher a {
+  cursor: pointer;
+}
+
+#english-flag {
+  width: 3.5rem;
+}
+
+#danish-flag {
+  height: 2rem;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22252f;
+  color: #ffffff;
   font-size: 1rem;
   height: 6vh;
 }
 
-#name {
-  grid-column: 1;
-  grid-row: 1;
-  margin-left: 3rem;
-}
-
 #nav ul {
   display: flex;
+  padding-right: 6rem;
   list-style: none;
   grid-column: 2;
-  justify-self: end;
-}
-
-#nav ul li {
-  margin: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 #nav ul a {
   color: #d0d5df;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
-#logo {
-  height: 5rem;
+#name {
+  visibility: hidden;
 }
 
-footer {
-  background-color: #152237;
+.nav-btn {
+  padding: 0.313px;
+  cursor: pointer;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#footer {
+  background-color: #1a1c23;
   color: #d0d5df;
-  height: 10vh;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#footerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#footerSocial {
+  display: flex;
+  gap: 5rem;
+}
+
+#footerSocial a {
+  color: #d0d5df;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#footerSocial a:hover {
+  color: #ffffff;
+}
+
+#footerSocial i {
+  margin-right: 0.5rem;
+}
+
+#footerInfo {
+  margin-top: 1rem;
+}
+
+#footerInfo p {
+  margin: 0;
+}
+
+/* Iphone 14 pro max - ipad pro */
+@media only screen and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #english-flag {
+    height: 1.5rem;
+    width: auto;
+  }
+
+  #danish-flag {
+    height: 1.5rem;
+    width: auto;
+  }
+
+  #nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: #22252f;
+    transform: translateY(-100vh);
+  }
+
+  #nav ul a {
+    font-size: 2rem;
+  }
+
+  #nav ul.responsive-nav {
+    transform: translateY(0);
+  }
+
+  #name {
+    visibility: visible;
+    position: absolute;
+  }
+
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .nav-close-btn {
+    visibility: hidden;
+  }
+}
+
+/* Ipad pro - macbook air */
+@media only screen and (max-width: 1440px) {
 }

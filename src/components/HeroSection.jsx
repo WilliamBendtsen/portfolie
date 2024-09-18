@@ -1,4 +1,4 @@
-import lol from "../img/lol.jpeg";
+import Placeholder from "../img/placeholder.png";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
@@ -7,15 +7,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <>
       <section id="hero">
-        <p>Hi, my name is William</p>
-        <h1>
-          I create websites your users <br /> don&apos;t want to click away from{" "}
-        </h1>
+        <p>{t("hero.intro1")}</p>
+        <h1>{t("hero.intro2")}</h1>
         <ul>
           <li>
             <a
@@ -34,12 +35,14 @@ export default function HeroSection() {
             </a>
           </li>
         </ul>
-        <h3>Projects down here</h3>
+        <h3>{t("hero.projects")}</h3>
         <a id="hero-arrow" href="#projects-title">
           <FontAwesomeIcon icon={faChevronDown} />
         </a>
       </section>
-      <img src={lol} alt="lol" id="image-of-me" />
+      <div id="image-of-me-box">
+        <img src={Placeholder} alt="lol" id="image-of-me" />
+      </div>
       <div id="tech-stack">
         <ul>
           <span>Tech stack:</span>
@@ -55,7 +58,7 @@ export default function HeroSection() {
           <li className="react-icon">
             <FontAwesomeIcon icon={faReact} />
           </li>
-          <span>And more to come...</span>
+          <span>{t("hero.techStack")}</span>
         </ul>
       </div>
     </>

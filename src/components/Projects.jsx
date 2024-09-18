@@ -8,20 +8,18 @@ import { faJs } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
   return (
     <>
-      <h2 id="projects-title">Projects:</h2>
+      <h2 id="projects-title">{t("project1.title")}</h2>
       <div id="four-amigos-text">
-        <h3>Four Amigos Taco & Tequila 🌮</h3>
-        <p>
-          With a focus on crafting an authentic dining experience, this website
-          creates an atmosphere adjacent to mexican culture, with the use of
-          colors and typography
-        </p>
+        <h3>{t("project1.h3")} 🌮</h3>
+        <p>{t("project1.p")}</p>
         <ul className="programs-used">
-          <span>Programs used:</span>
+          <span>{t("project1.programs")}</span>
           <li className="html-icon">
             <FontAwesomeIcon icon={faHtml5} />
           </li>
@@ -57,14 +55,10 @@ export default function Projects() {
         alt="Steno Museum Landing Page"
       />
       <div id="steno-text">
-        <h3>Steno Museum Interactive Adventure 🌙</h3>
-        <p>
-          With a focus on teaching children about the moon and the universe,
-          this interactive story follows Astro Alex in his journey to the moon
-          and beyond{" "}
-        </p>
+        <h3>{t("project2.h3")} 🌙</h3>
+        <p>{t("project2.p")}</p>
         <ul className="programs-used">
-          <span>Programs used:</span>
+          <span>{t("project1.programs")}</span>
           <li className="html-icon">
             <FontAwesomeIcon icon={faHtml5} />
           </li>
@@ -90,14 +84,10 @@ export default function Projects() {
         </ul>
       </div>
       <div id="troejborg-text">
-        <h3>Trøjborg Bryg - Fictional Non-Alcoholic Brewery</h3>
-        <p>
-          For this fictional brewery, the goal was to create a modern, sleek,
-          minimalistic website, targeted towards the often too alcoholic youth,
-          to make non-alcoholic beer seem like a just-as-good substitute
-        </p>
+        <h3>{t("project3.h3")}</h3>
+        <p>{t("project3.p")}</p>
         <ul className="programs-used">
-          <span>Programs used:</span>
+          <span>{t("project1.programs")}</span>
           <li className="html-icon">
             <FontAwesomeIcon icon={faHtml5} />
           </li>
@@ -136,16 +126,10 @@ export default function Projects() {
         alt="Nippon Landing Page"
       />
       <div id="nippon-text">
-        <h3>Nippon - Fictional Meal-Kit Provider </h3>
-        <p>
-          For this fictional meal-kit provider, the goal was to create an
-          atmosphere as close to asian cultute as possible, while still
-          appealing to the mass european and american audience for asian
-          cuisine. This was achieved trough the means of typography, colors and
-          composition.
-        </p>
+        <h3>{t("project4.h3")} </h3>
+        <p>{t("project4.p")}</p>
         <ul className="programs-used">
-          <span>Programs used:</span>
+          <span>{t("project1.programs")}</span>
           <li className="html-icon">
             <FontAwesomeIcon icon={faHtml5} />
           </li>
