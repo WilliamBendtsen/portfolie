@@ -22,6 +22,7 @@ export default function HeroSection() {
             <a
               className="linkedin-icon"
               href="https://www.linkedin.com/in/william-bendtsen-01431028b/"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -30,6 +31,7 @@ export default function HeroSection() {
             <a
               className="github-icon"
               href="https://github.com/WilliamBendtsen"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>

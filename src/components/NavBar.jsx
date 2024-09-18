@@ -12,13 +12,13 @@ export default function NavBar() {
     i18n.changeLanguage(lng);
   };
 
-  const navListRef = useRef(); // Reference for ul element
+  const navListRef = useRef();
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
   const showNavbar = () => {
-    navListRef.current.classList.toggle("responsive-nav"); // Toggle class on ul element
-    setIsOpen(!isOpen); // Toggle isOpen state to switch between FaBars and FaTimes
+    navListRef.current.classList.toggle("responsive-nav");
+    setIsOpen(!isOpen);
   };
 
   const toggleNavbar = () => {
@@ -57,7 +57,7 @@ export default function NavBar() {
         <a href="#skills" onClick={closeNavbar}>
           <li>{t("nav.skills")}</li>
         </a>
-        <a href="#four-amigos-project" onClick={closeNavbar}>
+        <a href="#projects-title" onClick={closeNavbar}>
           <li>{t("nav.projects")}</li>
         </a>
         <a href="#contact" onClick={closeNavbar}>

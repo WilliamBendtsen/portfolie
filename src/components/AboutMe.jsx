@@ -14,7 +14,7 @@ export default function AboutMe() {
           <p>{t("aboutMe.p3")}</p>
         </div>
         <div id="cv">
-          <h3>Tag et kig på mit CV:</h3>
+          <h3>{t("aboutMe.cv")}</h3>
           <div id="button-container">
             <button
               className="aboutMe-button"
