@@ -1,10 +1,10 @@
-import { useTranslation } from "react-i18next";
 import enFlag from "../img/en-flag.png";
 import dkFlag from "../img/dk-flag.png";
 import i18n from "../i18n";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function NavBar() {
   const { t } = useTranslation();

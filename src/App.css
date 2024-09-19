@@ -131,65 +131,6 @@ body {
   margin: 0;
 }
 
-/* Iphone 14 pro max - ipad pro */
-@media only screen and (max-width: 1023px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  #english-flag {
-    height: 1.5rem;
-    width: auto;
-  }
-
-  #danish-flag {
-    height: 1.5rem;
-    width: auto;
-  }
-
-  #nav ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    background-color: #22252f;
-    transform: translateY(-100vh);
-  }
-
-  #nav ul a {
-    font-size: 2rem;
-  }
-
-  #nav ul.responsive-nav {
-    transform: translateY(0);
-  }
-
-  #name {
-    visibility: visible;
-    position: absolute;
-  }
-
-  .nav-btn {
-    visibility: visible;
-    opacity: 1;
-    position: absolute;
-    right: 1.5rem;
-    top: 1.2rem;
-    font-size: 1rem;
-  }
-
-  .nav-close-btn {
-    visibility: hidden;
-  }
-}
-
 /* Ipad pro - macbook air */
 @media only screen and (max-width: 1439px) {
   .language-switcher {
@@ -238,8 +179,76 @@ body {
     opacity: 1;
     position: absolute;
     right: 1.5rem;
-    top: 1.2rem;
+    top: 1.3rem;
     font-size: 2rem;
+  }
+
+  .nav-close-btn {
+    visibility: hidden;
+  }
+}
+
+/* Iphone 14 pro max - ipad pro */
+@media only screen and (max-width: 1023px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .language-switcher {
+    top: 1rem;
+  }
+
+  #english-flag {
+    height: 1.2rem;
+    width: auto;
+  }
+
+  #danish-flag {
+    height: 1.2rem;
+    width: auto;
+  }
+
+  #nav {
+    position: sticky;
+    top: 0;
+  }
+
+  #nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: #22252f;
+    transform: translateY(-100vh);
+  }
+
+  #nav ul a {
+    font-size: 2rem;
+  }
+
+  #nav ul.responsive-nav {
+    transform: translateY(0);
+  }
+
+  #name {
+    visibility: visible;
+    position: absolute;
+  }
+
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.3rem;
   }
 
   .nav-close-btn {

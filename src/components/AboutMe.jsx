@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Placeholder from "../img/placeholder.png";
+import young1 from "../img/young1.png";
 
 export default function AboutMe() {
   const { t } = useTranslation();
@@ -7,7 +7,7 @@ export default function AboutMe() {
     <section id="aboutMe">
       <h2>{t("aboutMe.h2")}</h2>
       <div id="aboutMeContent">
-        <img src={Placeholder} alt="image of me" />
+        <img src={young1} alt="image of me" />
         <div id="aboutMeText">
           <p>{t("aboutMe.p1")}</p>
           <p>{t("aboutMe.p2")}</p>

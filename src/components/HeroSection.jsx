@@ -1,4 +1,4 @@
-import Placeholder from "../img/placeholder.png";
+import ProfilePicture from "../img/picture-of-me.jpeg";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
@@ -43,7 +43,7 @@ export default function HeroSection() {
         </a>
       </section>
       <div id="image-of-me-box">
-        <img src={Placeholder} alt="lol" id="image-of-me" />
+        <img src={ProfilePicture} alt="lol" id="image-of-me" />
       </div>
       <div id="tech-stack">
         <ul>
